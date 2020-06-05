@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+	
+		do {var age = prompt ("How old are you ?")
+		var gender = prompt ("What is your gender ?")
+		var town = prompt ("Where do you live ?")
+		var confirm = prompt ("You are "+ age +" years old, you are a "+gender+" and you live in "+town+" Is that correct ?")}
+		while (confirm!=yes)
+	
 
 })();

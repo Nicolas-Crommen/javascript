@@ -12,5 +12,12 @@
 (function() {
 
     // your code here
+    function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));}
+    document.getElementById("run").addEventListener("click", function() {document.body.style.backgroundColor = rgb(getRandomInt(256),getRandomInt(256),getRandomInt(256))});
+
 
 })();
+
+
+'#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6)});

@@ -12,8 +12,14 @@
 (function() {
     
     // to get the value of an input: document.getElementById("element-id").value
+    
 
     document.getElementById("run").addEventListener("click", function() {
+    	for (i=document.getElementById("number").value,r=1; i>=1; i--)
+    		{ 
+    			var r=r*i;
+    		}
+    	console.log(r);	
 
         // your code here
 

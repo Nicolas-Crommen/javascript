@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function()
+    {
+    function person(lastname, firstname, age, city, country) 
+    	{
+  			this.lastname = lastname;
+  			this.firstname = firstname;
+  			this.age = age;
+  			this.city = city;
+  			this.country = country;
+		}
+	var nico = new person("Crommen", "Nicolas", 44, "Liège", "Belgium");
+	console.log(nico);	
+	})
 })();

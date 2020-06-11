@@ -27,4 +27,24 @@
         user: null,
     };
     // your code here
+    document.getElementById("run").addEventListener("click", function()
+    {
+        computers.forEach(element => {
+            if (element.available === null || element.available === undefined)
+            {
+                element.available=defaultProps.available;
+            }
+            if (element.os === null || element.os === undefined)
+            {
+                element.os=defaultProps.os;
+            }
+            if (element.user === undefined)
+            {
+                element.user=defaultProps.user;
+            }
+        })
+        computers.forEach(element => console.log(element));    
+
+        
+    })    
 })();

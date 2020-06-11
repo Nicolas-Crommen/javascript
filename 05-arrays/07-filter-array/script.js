@@ -90,5 +90,20 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function()
+    {
+        var eighteen = new Array;
+        var index = 0
+        people.forEach(myF);
+        function myF (item,age)
+        {
+            if (item.age>18)
+            {
+            eighteen[index]=item;
+            index++;
+            }
+        }
+        console.log(eighteen);
+        
+    })
 })();

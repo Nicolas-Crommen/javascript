@@ -29,5 +29,9 @@
     ];
 
     // your code here
-
+    document.getElementById("run").addEventListener("click", function()
+    {
+    var nodouble = [...new Set(fruits)];
+    console.log(nodouble);
+})
 })();

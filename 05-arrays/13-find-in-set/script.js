@@ -23,4 +23,18 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", function()
+    {   
+    console.log(people.size);
+
+     if (people.has("Alexandre"))
+     {
+     	console.log("Alexandre is in the set");
+     }
+     else 
+     {
+     	console.log("Alexandre is not in the set");
+     }
+
+    })
 })();

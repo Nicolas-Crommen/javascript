@@ -11,6 +11,11 @@
 
 (function() {
 
-    // your code here
+    var x = document.querySelector('[data-image]');
+    var y = x.dataset.image;
+    console.log(y);
+    document.querySelector("#target").innerHTML="<img src="+y+">";
 
 })();
+
+//img src=y

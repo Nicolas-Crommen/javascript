@@ -12,5 +12,13 @@
 (function() {
 
     // your code here
+    var c = document.getElementsByClassName("target");
+
+    for (i=0;i<=c.length;i++)
+    {
+    	c[i].innerHTML="owned";
+    }
 
 })();
+
+// Select the elements with the class "target" and replace their content with "owned"

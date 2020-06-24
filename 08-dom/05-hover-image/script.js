@@ -12,6 +12,16 @@
 (function() {
 	
 
-    // your code here
+    let x = document.querySelector('[data-hover]');
+    let y = x.dataset.hover;
+    console.log(y);
+    let z = x.src;
+    console.log(z);
 
-})();
+    x.onmouseover = function a(){z=y;};
+
+   /* function over() {z=y;};
+    x.addEventListener("mouseover", over); */
+    
+
+})()

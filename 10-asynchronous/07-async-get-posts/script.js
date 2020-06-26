@@ -10,21 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-	document.getElementById("run").addEventListener("click", () => 
-	{
-		window.lib.getPosts()
-		async function getPosts(error,array)
-		{
-			let array1
-			try
-			{
-				return array1 = await getPosts(array);
-				console.table(array1);
-			}
-			catch(error)
-			{
-				console.error("An error occured");
-			}
-		}	
+    document.getElementById("run").addEventListener("click", async function dispPosts() 
+    {
+	let postsArray = await window.lib.getPosts();
+	console.table(postsArray);
 	})
 })();

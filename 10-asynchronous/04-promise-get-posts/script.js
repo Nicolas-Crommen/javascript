@@ -16,9 +16,5 @@
 	{
 		console.table(resultat);
 	})
-	.catch(() =>
-	{
-		console.error("An error occured");
-	})
 	})
 })();

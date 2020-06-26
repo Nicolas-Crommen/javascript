@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", async function dispComs() 
+    {
+	let postsArray = await window.lib.getPosts();
+	let post;
+	for (post of postsArray)
+			{
+				post.comment = await window.lib.getComments(post.id);
+			}
+	console.log(postsArray);
+	})			
 })();

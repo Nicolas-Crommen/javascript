@@ -10,22 +10,26 @@
 // You will have time to focus on it later.
 
 (() => {
-	document.getElementById("run").addEventListener("click", () => {
-	window.lib.getPosts(callback1);
-	})
 
-	function callback1(error,array) 
+
+	function callback(error,array) 
 	{
-		console.table(array);
-		array.forEach(element =>
+		array.forEach(article =>
 		{
-			element.comments = window.lib.getComments(element.id,callback2);
-			function callback2(error,arrayCom){}
+			window.lib.getComments(article.id,(error, array) =>
+			{
+				article.comments=array;
+				//console.table(article.comments);
+			})
 		})	
 		
-		console.table(array);
+		console.log(array);
 		
 	}
+
+	document.getElementById("run").addEventListener("click", () => {
+	window.lib.getPosts(callback);
+	})
 
 
 })()

@@ -15,15 +15,17 @@
 		window.lib.getPosts()
 		.then((articles) =>
 		{
-			articles.forEach((element) =>
+			articles.forEach((article) =>
 			{
-				element.comments = window.lib.getComments(element.id);
+				window.lib.getComments(article.id)
+				.then((comment) =>
+				{
+					article.comment=comment;
+					//console.log(article.comment);
+				})
+				
 			})
-			console.table(articles);
-		})
-		.catch(() =>
-		{
-			console.error("An error occured");
+			console.log(articles);
 		})
 	})
 })();
